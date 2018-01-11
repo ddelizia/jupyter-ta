@@ -1,7 +1,11 @@
+# Jupyter Notebook for technical analysis
 
+This is a list of notebooks for trading technical analysis. The project includes the docker image with all you need for technical analysis.
 
+# Donate
 
-#Starting Jupyter notebook environment
-```
-docker run -it --rm -p 8888:8888 -e GRANT_SUDO=yes -v /Users/ddelizia/projects/jupyter:/home/jovyan/work ddelizia/jupyter-ta
-```
+If you find usefull the following stuff includend int this project, you can support via donation at the following addresses:
+
+BTC:
+ETH:
+LTC:
