@@ -6,11 +6,13 @@ This is a notebook with all you need to have to build your technical analysis wi
 
 The following notebokk includes all the python packages included in the https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook, plus the following packages:
 
-* ta-lib (https://github.com/mrjbq7/ta-lib)
+* ta-lib (https://github.com/mrjbq7/ta-lib): TA-Lib is widely used by trading software developers requiring to perform technical analysis of financial market data
+* catalyst (https://github.com/enigmampc/catalyst): an algorithmic trading library for crypto-assets written in Python. It allows trading strategies to be easily expressed and backtested against historical data
+* zipline (https://github.com/quantopian/zipline): a Pythonic algorithmic trading library. It is an event-driven system that supports both backtesting and live-trading
 
-## Run Jupyter
+# Run Jupyter
 
-Tu run Jupyter you can use the following command:
+To run Jupyter notebook you can use the following command:
 
 ```
 docker run -it --rm -p 8888:8888 ddelizia/jupyter-ta

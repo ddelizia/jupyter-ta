@@ -13,6 +13,11 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     rm /home/jovyan/ta-lib-0.4.0-src.tar.gz && \
     rm -Rf /home/jovyan/ta-lib
 
+RUN apt-get update && apt-get -y install libatlas-base-dev python-dev gfortran pkg-config libfreetype6-dev
+
 USER $NB_USER
 
-RUN pip install ta-lib
+RUN pip install ta-lib && \
+    pip install zipline
+
+RUN pip install enigma-catalyst
