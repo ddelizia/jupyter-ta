@@ -17,7 +17,22 @@ RUN apt-get update && apt-get -y install libatlas-base-dev python-dev gfortran p
 
 USER $NB_USER
 
-RUN pip install ta-lib && \
-    pip install zipline
-
+RUN pip install ta-lib
+RUN pip install zipline
 RUN pip install enigma-catalyst
+RUN pip install BeautifulSoup4
+RUN pip install tweepy
+RUN pip install praw
+RUN pip install textblob
+RUN pip install quandl
+RUN pip install plotly
+RUN pip install cufflinks
+RUN pip install git+https://github.com/oanda/oandapy.git
+RUN pip install ccxt
+
+# Install Tensorflow
+RUN conda install --quiet --yes \
+    'tensorflow=1.3*' \
+    'keras=2.0*' && \
+    conda clean -tipsy && \
+    fix-permissions $CONDA_DIR
